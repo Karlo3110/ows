@@ -1,6 +1,5 @@
-.hero-1 {
+#homepage-container {
   background-image: url("../assets/images/pokemon_hero.png");
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }

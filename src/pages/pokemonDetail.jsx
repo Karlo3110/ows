@@ -137,7 +137,7 @@ function PokemonDetail() {
                 >
                   <div>
                     <h2
-                      className="text-uppercase text-7xl text-black font-extrabold z-[2] m-[0]"
+                      className="text-uppercase text-5xl md:text-7xl text-black font-extrabold z-[2] m-[0]"
                       style={{
                         fontFamily: "Montserrat, sans-serif",
                       }}
@@ -242,6 +242,8 @@ function PokemonDetail() {
                   <div
                     style={{
                       display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
                     }}
                   >
                     {pokemonDetail.abilities.map((ability) => (
@@ -253,15 +255,14 @@ function PokemonDetail() {
                           fontSize: 24,
                           borderRadius: 25,
                           textAlign: "center",
-                          marginLeft: 5,
-                          marginRight: 5,
-                          padding: 8,
+                          margin: "0 auto",
+                          paddingLeft: 5,
                           width: "auto",
                           fontWeight: 200,
                         }}
                         key={ability.ability.name}
                       >
-                        {ability.ability.name}
+                        | {ability.ability.name} |
                       </p>
                     ))}
                   </div>
@@ -279,10 +280,10 @@ function PokemonDetail() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6" style={{ zIndex: 3 }}>
-              <div className="p-xl-5 m-xl-5">
+            <div className="col-md-6" style={{ zIndex: 1 }}>
+              <div className="p-xl-5 m-xl-5 flex justify-center items-center">
                 <img
-                  className="rounded img-fluid w-100 fit-cover"
+                  className=" w-100 "
                   style={{ minHeight: 300 }}
                   src={
                     pokemonDetail.sprites.other["official-artwork"]
